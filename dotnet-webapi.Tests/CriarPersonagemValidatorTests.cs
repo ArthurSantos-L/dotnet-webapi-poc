@@ -12,7 +12,7 @@ public class CriarPersonagemValidatorTests
     {
         _validator = new CriarPersonagemValidator();
     }
-    [Fact]
+    [Xunit.Fact]
     public void Deve_Ter_Erro_Quando_Nome_For_Vazio()
     {
         var model = new CriarPersonagemDto("", 20, "Slash", new Propriedades("Guitarra", "Guns"));
