@@ -1,4 +1,4 @@
-using System.Text.Json; 
+using System.Text.Json;
 
 namespace dotnet_webapi.Shared;
 
@@ -12,6 +12,13 @@ public class RequestContext
     public string Url { get; set; } = string.Empty;
     public string? Usuario { get; set; }
     public Dictionary<string, string> Headers { get; set; } = new();
+
+    public Dictionary<string, object> Metadata { get; set; } = new();
+
+    public void AddMetadata(string chave, object valor)
+    {
+        Metadata[chave] = valor;
+    }
 
     // Dados da Resposta (Preenchidos no final)
     public int StatusCode { get; set; }

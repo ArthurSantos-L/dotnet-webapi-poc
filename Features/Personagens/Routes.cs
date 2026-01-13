@@ -1,4 +1,5 @@
 using FluentValidation;
+using dotnet_webapi.Shared;
 
 namespace dotnet_webapi.Features.Personagens;
 
@@ -24,12 +25,13 @@ public static class PersonagemEndpoints
         });
 
         // POST: Criar
-        group.MapPost("/", (CriarPersonagemDto dto, IValidator<CriarPersonagemDto> validator) =>
+        group.MapPost("/", (CriarPersonagemDto dto, IValidator<CriarPersonagemDto> validator, RequestContext context) =>
         {
             var resultado = validator.Validate(dto);
 
             if (!resultado.IsValid)
             {
+                context.AddMetadata("FalhaValidacao", resultado.Errors.Select(e => e.ErrorMessage));
                 return Results.ValidationProblem(resultado.ToDictionary());
             }
 
@@ -42,6 +44,10 @@ public static class PersonagemEndpoints
             );
 
             Db.Add(novoPersonagem);
+
+            context.AddMetadata("PersonagemId", novoPersonagem.Id);
+            context.AddMetadata("BandaEscolhida", novoPersonagem.Propriedades.Banda);
+            context.AddMetadata("LogicaDeNegocio", "Criação bem sucedida via Minimal API");
             return Results.Created($"/personagens/{novoPersonagem.Id}", novoPersonagem);
         });
 
