@@ -1,18 +1,18 @@
-using Xunit;
 using FluentValidation.TestHelper;
 using dotnet_webapi.Features.Personagens; 
 
-namespace dotnet_webapi.Tests.Features.Personagens;
+namespace dotnet_webapi.Tests;
 
-public class CriarPersonagemValidatorTests
+public class CriarPersonagemValidatorTest
 {
     private readonly CriarPersonagemValidator _validator;
 
-    public CriarPersonagemValidatorTests()
+    public CriarPersonagemValidatorTest()
     {
         _validator = new CriarPersonagemValidator();
     }
-    [Xunit.Fact]
+
+    [Fact]
     public void Deve_Ter_Erro_Quando_Nome_For_Vazio()
     {
         var model = new CriarPersonagemDto("", 20, "Slash", new Propriedades("Guitarra", "Guns"));
