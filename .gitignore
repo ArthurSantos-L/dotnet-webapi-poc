@@ -1,0 +1,37 @@
+# --- .NET Core / .NET 8 ---
+# Compilados e Binários
+bin/
+obj/
+Debug/
+Release/
+
+# Dependências e caches locais
+project.lock.json
+project.fragment.lock.json
+artifacts/
+
+# Arquivos de usuário e configurações locais (NUNCA comitar segredos)
+*.user
+*.userosscache
+*.sln.docstates
+appsettings.Development.json
+appsettings.Local.json
+
+
+# Neovim / Vim (Arquivos de Swap e Backup)
+[._]*.s[a-v][a-z]
+[._]*.sw[a-p]
+[._]s[a-rt-v][a-z]
+[._]ss[a-gi-z]
+[._]sw[a-p]
+*.swp
+*~
+.netrwhist
+Session.vim
+
+.omnisharp/
+omnisharp.json
+.ionide/
+
+.DS_Store
+Thumbs.db
