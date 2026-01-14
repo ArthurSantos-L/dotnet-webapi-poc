@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "U0GsqvkEg5+PWzsk4MjLcHgrYD+fMnID2mi2DtDnliPzAxk/v2ovMriEtzh87vs+UZlCLMbwvFYZoPKFbfKiFw==",
+  "dgSpecHash": "007wMW4aKB34XBY+e0H9ZVPMWgLx6SyVoGU14ebmWjA68W8QLOS5Iwmthrl13qAaHU53X2egNej4Crp3kGwLBg==",
   "success": true,
-  "projectFilePath": "/home/arthur-leandro/1 - Projects/dotnet-webapi/dotnet-webapi.Tests/dotnet-webapi.Tests.csproj",
+  "projectFilePath": "/home/arthur-leandro/1 - Projects/dotnet-webapi-poc/dotnet-webapi.Tests/dotnet-webapi.Tests.csproj",
   "expectedPackageFiles": [
     "/home/arthur-leandro/.nuget/packages/coverlet.collector/6.0.0/coverlet.collector.6.0.0.nupkg.sha512",
     "/home/arthur-leandro/.nuget/packages/dotnetenv/3.1.1/dotnetenv.3.1.1.nupkg.sha512",

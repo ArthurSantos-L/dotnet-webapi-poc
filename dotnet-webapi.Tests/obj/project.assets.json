@@ -6305,8 +6305,8 @@
     },
     "dotnet-webapi/1.0.0": {
       "type": "project",
-      "path": "../dotnet-webapi.csproj",
-      "msbuildProject": "../dotnet-webapi.csproj"
+      "path": "../dotnet-webapi/dotnet-webapi.csproj",
+      "msbuildProject": "../dotnet-webapi/dotnet-webapi.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -6326,11 +6326,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/arthur-leandro/1 - Projects/dotnet-webapi/dotnet-webapi.Tests/dotnet-webapi.Tests.csproj",
+      "projectUniqueName": "/home/arthur-leandro/1 - Projects/dotnet-webapi-poc/dotnet-webapi.Tests/dotnet-webapi.Tests.csproj",
       "projectName": "dotnet-webapi.Tests",
-      "projectPath": "/home/arthur-leandro/1 - Projects/dotnet-webapi/dotnet-webapi.Tests/dotnet-webapi.Tests.csproj",
+      "projectPath": "/home/arthur-leandro/1 - Projects/dotnet-webapi-poc/dotnet-webapi.Tests/dotnet-webapi.Tests.csproj",
       "packagesPath": "/home/arthur-leandro/.nuget/packages/",
-      "outputPath": "/home/arthur-leandro/1 - Projects/dotnet-webapi/dotnet-webapi.Tests/obj/",
+      "outputPath": "/home/arthur-leandro/1 - Projects/dotnet-webapi-poc/dotnet-webapi.Tests/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/home/arthur-leandro/.nuget/NuGet/NuGet.Config"
@@ -6345,8 +6345,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "/home/arthur-leandro/1 - Projects/dotnet-webapi/dotnet-webapi.csproj": {
-              "projectPath": "/home/arthur-leandro/1 - Projects/dotnet-webapi/dotnet-webapi.csproj"
+            "/home/arthur-leandro/1 - Projects/dotnet-webapi-poc/dotnet-webapi/dotnet-webapi.csproj": {
+              "projectPath": "/home/arthur-leandro/1 - Projects/dotnet-webapi-poc/dotnet-webapi/dotnet-webapi.csproj"
             }
           }
         }
