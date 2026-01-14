@@ -1,9 +1,9 @@
 # --- .NET Core / .NET 8 ---
 # Compilados e Binários
-bin/
-obj/
-Debug/
-Release/
+**/bin/
+**/obj/
+**/Debug/
+**/Release/
 
 # Dependências e caches locais
 project.lock.json
